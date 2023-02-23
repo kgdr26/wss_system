@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('login');
+});
 
 // Dashboard
-Route::get('/',['as'=>'/dasbor','uses'=> 'MainController@Dasbor']);
+// Route::get('/',['as'=>'/dasbor','uses'=> 'MainController@Dasbor']);
 Route::get('dasbor',['as'=>'dasbor','uses'=> 'MainController@Dasbor']);
 
 //Master
